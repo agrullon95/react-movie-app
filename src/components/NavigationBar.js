@@ -1,5 +1,5 @@
 import React , {useContext} from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { signOut } from '../auth/firebase';
 import Navbar from 'react-bootstrap/Navbar';
@@ -40,8 +40,6 @@ const NavBarSlideIn = (currentUser) => {
 }
 
 function NavigationBar() {
-    const history = useHistory();
-
     const { currentUser } = useContext(AuthContext);
 
     return (

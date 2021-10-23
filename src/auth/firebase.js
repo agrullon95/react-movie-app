@@ -54,7 +54,7 @@ export const signIn = async (email, password) => {
     signInWithEmailAndPassword(firebaseAuth, email, password)
         .then((userCredentials) => {
             console.log('userCred', userCredentials);
-            const user = userCredentials.user;
+            // const user = userCredentials.user;
         })
         .catch((error) => {
             console.log('sign up error', error);
@@ -65,7 +65,7 @@ export const signUp = async (email, password) => {
     createUserWithEmailAndPassword(firebaseAuth, email, password)
         .then((userCredentials) => {
             console.log('userCred', userCredentials);
-            const user = userCredentials.user;
+            // const user = userCredentials.user;
         })
         .catch((error) => {
             console.log('sign up error', error);
